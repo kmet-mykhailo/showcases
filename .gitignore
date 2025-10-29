@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+## add output folder for FE projects
+**/dist
+
 # User-specific files
 *.rsuser
 *.suo
