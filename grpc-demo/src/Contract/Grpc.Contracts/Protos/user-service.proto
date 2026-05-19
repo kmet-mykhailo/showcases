@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+// Defines the C# namespace for the generated classes
+option csharp_namespace = "GrpcContracts.Protos";
+
+// The service definition
+service UserService {
+  // A Unary RPC method
+  rpc GetUserInfo (GetUserInfoRequest) returns (GetUserInfoReply);
+}
+
+// The request message
+message GetUserInfoRequest {
+  string id = 1; // '1' is the field tag used in binary encoding
+}
+
+// The response message
+message GetUserInfoReply {
+  string name = 1;
+  string id = 2;
+}

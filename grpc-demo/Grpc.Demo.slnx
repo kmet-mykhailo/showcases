@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Client/">
+    <Project Path="src/Client/Grpc.Client.API.csproj" />
+  </Folder>
+  <Folder Name="/src/Contract/">
+    <Project Path="src/Contract/Grpc.Contracts/Grpc.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/Server/">
+    <Project Path="src/Server/Grpc.Server.API.csproj" />
+  </Folder>
+</Solution>
