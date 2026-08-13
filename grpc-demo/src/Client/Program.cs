@@ -16,10 +16,10 @@ builder.Services.AddGrpcClient<UserService.UserServiceClient>(options =>
 var app = builder.Build();
 
 app.MapGet("/", () => "Hello World!");
-app.MapGet("/user/{id}", async (string id, UserService.UserServiceClient userService, CancellationToken cancellationToken) =>
+app.MapGet("/user/{id:guid}", async (Guid id, UserService.UserServiceClient userService, CancellationToken cancellationToken) =>
 {
     GetUserInfoReply result = await userService.GetUserInfoAsync(
-        new GetUserInfoRequest { Id = id }, cancellationToken: cancellationToken);
+        new GetUserInfoRequest { Id = id.ToString() }, cancellationToken: cancellationToken);
     return Results.Ok(result);
 });
 
