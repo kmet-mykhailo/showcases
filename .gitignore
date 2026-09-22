@@ -430,3 +430,6 @@ FodyWeavers.xsd
 *.msm
 *.msp
 .DS_Store
+
+# Rider files
+.idea/
