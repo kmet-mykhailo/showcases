@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AsyncAwaitDemo.Core/AsyncAwaitDemo.Core.csproj" />
+  <Project Path="tests\AsyncAwaitDemo.UnitTests\AsyncAwaitDemo.UnitTests.csproj" />
+</Solution>
